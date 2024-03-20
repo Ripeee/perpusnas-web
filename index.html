@@ -16,28 +16,48 @@
 <body class="bg-white font-roboto">
   <!-- NAVBAR -->
   <header class="fixed z-20 w-full bg-white shadow-md">
-    <nav class="max-w-[1280px] mx-auto flex flex-row justify-between items-center gap-[16px] px-10">
-      <div class="flex flex-row items-center gap-4 py-[24px]">
-        <img src="./Assets/logo.png" alt="Logo" />
-        <div class="flex flex-col text-nowrap">
-          <span class="text-[10px] sm:text-[14px] font-bold font-roboto-medium ">PERPUSTAKAAN NASIONAL</span>
-          <span class="text-[8px] sm:text-[14px] font-medium text-gray-400">REPUBLIK INDONESIA</span>
+    <nav
+      class="w-full flex flex-wrap max-[1280px]:max-w-[1280px] mx-auto xl:flex-row justify-between items-center gap-[16px] xl:px-10">
+      <div class="flex flex-row justify-between w-full px-5 max-[400px]:px-10 xl:px-0 xl:w-auto">
+        <div class="flex flex-row items-center gap-4 py-[24px]">
+          <img src="./Assets/logo.png" alt="Logo" />
+          <div class="flex flex-col text-nowrap">
+            <span class="text-[10px] sm:text-[14px] font-bold font-roboto-medium ">PERPUSTAKAAN NASIONAL</span>
+            <span class="text-[8px] sm:text-[14px] font-medium text-gray-400">REPUBLIK INDONESIA</span>
+          </div>
         </div>
+        <button name="hambuger" onclick="HamburgerGrup()" class=" xl:hidden cursor-pointer">
+          <i class="hamburger fa-solid fa-bars opacity-1 animate transition-all duration-300"></i>
+          <i class="close fa-solid fa-xmark opacity-0 animate transition-all duration-300 hidden"></i>
+        </button>
       </div>
-      <button name="hambuger" onclick="HamburgerGrup()" class="w-full flex justify-end xl:hidden cursor-pointer">
-        <i class="hamburger fa-solid fa-bars opacity-1 animate transition-all duration-300"></i>
-        <i class="close fa-solid fa-xmark opacity-0 animate transition-all duration-300 hidden"></i>
-      </button>
-      <ul class="group-list hidden w-full flex flex-col items-start justify-center xl:flex xl:flex-row items-center font-medium">
-        <li>
-          <a href="#" class="bg-green-600 text-white px-[30px] py-[38px] flex justify-center items-center">Beranda</a>
+      <ul
+        class="group-list hidden w-full flex flex-col items-start justify-start h-[100dvh] xl:flex xl:flex-row xl:items-center xl:h-auto xl:w-auto font-medium">
+        <li class="w-full">
+          <a href="#"
+            class="beranda bg-green-600 text-white px-[30px] py-[38px] flex justify-start items-start xl:justify-center xl:items-center">Beranda</a>
         </li>
-        <li>
-          <div class="dropdown cursor-pointer">
-            <p
-              class="text-gray-500 px-[30px] py-[38px] flex justify-center items-center hover:bg-green-600 hover:text-white duration-300 animation">
+        <li class="w-full">
+          <button onclick="ResensiDropdown()"
+            class="resensi xl:hidden cursor-pointer w-full flex flex-wrap justify-between items-center px-[30px] py-[38px]">
+            <p class="flex justify-start items-start xl:justify-center xl:items-center">
               Resensi</p>
-            <div class="dropdown-content rounded-b-md">
+            <i class="dropdown-icon fa-solid fa-angle-up animate duration-200 rotate-0"></i>
+            <div class="list-dropdown hidden w-full xl:hidden pt-[40px]">
+              <ul class="flex flex-col justify-start items-start gap-4">
+                <li><a href="resensi-tulisan.html"
+                    class="text-white font-roboto text-nowrap resensi-tulisan"> Resensi Tulisan</a>
+                </li>
+                <li><a href="resensi-video.html"
+                    class="text-white font-roboto text-nowrap resensi-video"> Resensi Video</a></li>
+              </ul>
+            </div>
+          </button>
+          <div class="hidden xl:inline-block dropdown cursor-pointer w-full">
+            <p
+              class="text-gray-500 px-[30px] py-[38px] flex justify-start items-start xl:justify-center xl:items-center hover:bg-green-600 hover:text-white duration-300 animation">
+              Resensi</p>
+            <div class="hidden xl:hover:inline-block dropdown-content rounded-b-md">
               <ul class="flex flex-col gap-4 py-4 pl-4 pr-16">
                 <li>
                   <a href="resensi-tulisan.html"
@@ -51,12 +71,29 @@
             </div>
           </div>
         </li>
-        <li>
-          <div class="dropdown cursor-pointer">
-            <p
-              class="text-gray-500 px-[30px] py-[38px] flex justify-center items-center hover:bg-green-600 hover:text-white duration-300 animation">
+        <li class="w-full">
+          <button onclick="InformasiDropdown()"
+            class="informasi xl:hidden cursor-pointer w-full flex flex-wrap justify-between items-center px-[30px] py-[38px] text-black">
+            <p class="flex justify-start items-start xl:justify-center xl:items-center">
               Informasi</p>
-            <div class="dropdown-content rounded-b-md">
+            <i class="dropdown-icon fa-solid fa-angle-up animate duration-200 rotate-0"></i>
+            <div class="list-dropdown2 hidden w-full xl:hidden pt-[40px]">
+              <ul class="flex flex-col justify-start items-start gap-4">
+                <li><a href="informasi-berita.html"
+                    class="text-white font-roboto text-nowrap informasi-berita">
+                    Berita</a>
+                </li>
+                <li><a href="informasi-pengumuman.html"
+                    class="text-white font-roboto text-nowrap informasi-pengumuman">
+                    Pengumuman</a></li>
+              </ul>
+            </div>
+          </button>
+          <div class="hidden xl:block dropdown cursor-pointer w-full">
+            <p
+              class="text-gray-500 px-[30px] py-[38px] flex justify-start items-start xl:justify-center xl:items-center hover:bg-green-600 hover:text-white duration-300 animation">
+              Informasi</p>
+            <div class="hidden xl:hover:inline-block dropdown-content rounded-b-md">
               <ul class="flex flex-col gap-4 py-4 pl-4 pr-16">
                 <li>
                   <a href="informasi-berita.html" class="text-gray-500 font-roboto hover:text-green-600 text-nowrap">
@@ -70,13 +107,14 @@
               </ul>
             </div>
           </div>
-        <li>
-          <a href=""
-            class="text-gray-500 px-[30px] py-[38px] flex justify-center items-center hover:bg-green-600 hover:text-white duration-300 animation">Dokumen</a>
         </li>
-        <li>
+        <li class="w-full">
           <a href=""
-            class="text-center text-gray-500 px-[30px] py-[38px] flex justify-center items-center hover:bg-green-600 hover:text-white duration-300 animation">Hubungi
+            class="text-gray-500 px-[30px] py-[38px] flex justify-start items-start xl:justify-center xl:items-center hover:bg-green-600 hover:text-white duration-300 animation">Dokumen</a>
+        </li>
+        <li class="w-full">
+          <a href=""
+            class="text-center text-nowrap text-gray-500 px-[30px] py-[38px] flex justify-start items-start xl:justify-center xl:items-center hover:bg-green-600 hover:text-white duration-300 animation">Hubungi
             Kami</a>
         </li>
       </ul>
