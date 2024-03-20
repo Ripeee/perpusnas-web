@@ -75,3 +75,19 @@ function Question3() {
 
 document.getElementById("copyright").innerHTML =
 	"&copy Copyright " + new Date().getFullYear() + " | ";
+
+
+	const dataResensi = [
+		{
+			id: 1,
+			image:
+				"https://s3-alpha-sig.figma.com/img/bf5f/e5cc/9fd480e2c313a2be3dfbadf030139c1e?Expires=1711929600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Zy66U~DgDgk33EgSvcA-rw4l4c8KNQ8loXLM0Ba8rEo6~dNORFNoqS2I7d1S6MHOQl8iB-LDULOpPyQGuH3-QWFYfoQ2wovnt0B-0eeZ6qCNZAhN7i4tMZRsUIdTvlb~QJvwB952z7XnUJ7E-IjfxOi6398SMhGoFeeVkRVUiqa8NQjEKQ69kZZLPvVKK7RHKRsA620~2U~SyVdanEtrWtxRrD7YinPDsR~H6Dnx3Fl-hjVZi4WfFfmyAz3hxFepYfCnGC0BJvtWz0UzJ8BU2OwCrA1aiFaCWR7v2-JkJtJPNnhqKvg4kx2L~zKOT4UpJB11TG3H9uCGSftZ~TnAFw__",
+			title: "Dilan dia adalah Dilanku tahun 1990",
+			category: "Novel Fiksi",
+			created_by: "Pidi Baiq",
+			isbn: "9786027870413",
+			year: 2014,
+			uploaded_by: "Azka Faeyza. P",
+			uploaded_from: "SMP Negeri 7 Jember",
+		},
+	];
