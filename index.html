@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <script src="https://cdn.tailwindcss.com"></script>
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+ <title>Document</title>
+ <style>
+  @import url('https://fonts.cdnfonts.com/css/roboto');
+
+  .swiper-pagination-bullet-active {
+   background-color: rgba(22, 155, 72, 1);
+  }
+
+  .font-roboto {
+   font-family: 'Roboto Light', sans-serif;
+  }
+
+  .font-roboto-medium {
+   font-family: 'Roboto Medium', sans-serif;
+  }
+
+  .font-roboto-black {
+   font-family: 'Roboto Black', sans-serif;
+  }
+ </style>
+</head>
+
+<body class="bg-white font-roboto">
+ <!-- NAVBAR -->
+ <header class="fixed z-20 w-full bg-white shadow-md">
+  <nav class="max-w-[1280px] mx-auto flex flex-row justify-between items-center gap-[16px] ">
+   <div class="flex flex-row items-center gap-4 py-[24px]">
+    <img src="./Assets/logo.png" alt="Logo" />
+    <div class="flex flex-col text-nowrap">
+     <span class="text-sm font-bold font-roboto-medium">PERPUSTAKAAN NASIONAL</span>
+     <span class="text-[10px] font-medium text-gray-400">REPUBLIK INDONESIA</span>
+    </div>
+   </div>
+   <ul class="flex flex-row items-center font-medium">
+    <li>
+     <a href="#" class="bg-green-600 text-white px-[30px] py-[38px] flex justify-center items-center">Beranda</a>
+    </li>
+    <li>
+     <a href="resensi.html"
+      class="text-gray-500 px-[30px] py-[38px] flex justify-center items-center hover:bg-green-600 hover:text-white duration-300 animation">Resensi</a>
+    </li>
+    <li>
+     <a href=""
+      class="text-gray-500 px-[30px] py-[38px] flex justify-center items-center hover:bg-green-600 hover:text-white duration-300 animation">Informasi</a>
+    </li>
+    <li>
+     <a href=""
+      class="text-gray-500 px-[30px] py-[38px] flex justify-center items-center hover:bg-green-600 hover:text-white duration-300 animation">Dokumen</a>
+    </li>
+    <li>
+     <a href=""
+      class="text-center text-gray-500 px-[30px] py-[38px] flex justify-center items-center hover:bg-green-600 hover:text-white duration-300 animation">Hubungi
+      Kami</a>
+    </li>
+   </ul>
+   <div class="flex flex-row items-center gap-12">
+    <button>
+     <img src="./Assets/search.png" alt="">
+    </button>
+    <button name="daftar" class="text-nowrap py-4 px-6 bg-blue-800 text-white rounded-[120px]">Daftar Sekarang</button>
+   </div>
+  </nav>
+ </header>
+
+ <main class="w-full max-w-[1280px] mx-auto">
+  <!-- Content 1 -->
+  <section class=" xl:pt-[100px]">
+   <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+     <!-- Slide-1 -->
+     <div class="swiper-slide">
+      <img src="./Assets/beranda/kubik.png" alt="Kubik" class="absolute top-0 right-0">
+      <div class="relative z-10 flex flex-row items-center justify-between px-20 py-[80px]">
+       <div class="flex flex-col gap-8">
+        <h1 class="font-roboto-black text-black text-[24px] xl:text-[48px]">Ayo! Ikut Lomba <br>
+         Gerakan Indonesia Membaca!</h1>
+        <p class="text-[18px]">Tunjukkan semangat bacamu dan sebarkan kecintaan pada buku.<br>
+         Raih hadiah jutaan rupiah dan jadilah duta literasi Indonesia!</p>
+        <div class="flex flex-row items-center gap-4">
+         <button class="bg-green-700 rounded-full w-[68px] h-[68px] flex justify-center items-center">
+          <img src="./Assets/panah-kanan.png" alt="panah-kanan">
+         </button>
+         <a href="./Auth/Registrasi.html" class="text-green-500">Daftar Sekarang</a>
+        </div>
+       </div>
+       <img src="./Assets/beranda/gerakan-indonesia-membaca.png" alt="gerakan-indonesia-membaca">
+      </div>
+     </div>
+     <!-- Slide-2 -->
+     <div class="swiper-slide">
+      <img src="./Assets/beranda/kubik.png" alt="Kubik" class="absolute top-0 right-0">
+      <div class="relative z-10 flex flex-row items-center justify-between px-20 py-[80px]">
+       <div class="flex flex-col gap-8">
+        <h1 class="font-roboto-black text-black text-[24px] xl:text-[48px]">Ayo! Ikut Lomba <br>
+         Gerakan Indonesia Membaca!</h1>
+        <p class="text-[18px]">Tunjukkan semangat bacamu dan sebarkan kecintaan pada buku.<br>
+         Raih hadiah jutaan rupiah dan jadilah duta literasi Indonesia!</p>
+        <div class="flex flex-row items-center gap-4">
+         <button class="bg-green-700 rounded-full w-[68px] h-[68px] flex justify-center items-center">
+          <img src="./Assets/panah-kanan.png" alt="panah-kanan">
+         </button>
+         <a href="./Auth/Registrasi.html" class="text-green-500">Daftar Sekarang</a>
+        </div>
+       </div>
+       <img src="./Assets/beranda/gerakan-indonesia-membaca.png" alt="gerakan-indonesia-membaca">
+      </div>
+     </div>
+     <!-- Slide-3 -->
+     <div class="swiper-slide">
+      <img src="./Assets/beranda/kubik.png" alt="Kubik" class="absolute top-0 right-0">
+      <div class="relative z-10 flex flex-row items-center justify-between px-20 py-[80px]">
+       <div class="flex flex-col gap-8">
+        <h1 class="font-roboto-black text-black text-[24px] xl:text-[48px]">Ayo! Ikut Lomba <br>
+         Gerakan Indonesia Membaca!</h1>
+        <p class="text-[18px]">Tunjukkan semangat bacamu dan sebarkan kecintaan pada buku.<br>
+         Raih hadiah jutaan rupiah dan jadilah duta literasi Indonesia!</p>
+        <div class="flex flex-row items-center gap-4">
+         <button class="bg-green-700 rounded-full w-[68px] h-[68px] flex justify-center items-center">
+          <img src="./Assets/panah-kanan.png" alt="panah-kanan">
+         </button>
+         <a href="./Auth/Registrasi.html" class="text-green-500">Daftar Sekarang</a>
+        </div>
+       </div>
+       <img src="./Assets/beranda/gerakan-indonesia-membaca.png" alt="gerakan-indonesia-membaca">
+      </div>
+     </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </section>
+
+  <!-- Content-2 -->
+  <section class="w-full mx-auto py-[67px] px-20">
+   <div class="flex flex-row items-center gap-40">
+    <img src="./Assets/beranda/bumi-manusia.png" alt="Bumi Manusia">
+    <div class="flex flex-col gap-5">
+     <span class="text-green-600 font-roboto-medium text-[16px]">TENTANG</span>
+     <h1 class="font-roboto-black text-[48px]">Gerakan Indonesia <br> Membacara</h1>
+     <div class="flex flex-col gap-8">
+      <div class="flex flex-col gap-3">
+       <h2 class="text-gray-7800 text-[16px] font-roboto-medium">TUJUAN</h2>
+       <p>Meningkatkan minat baca masyarakat dan <br> membangun budaya baca di Indonesia.</p>
+      </div>
+      <div class="flex flex-col gap-3">
+       <h2 class="text-gray-7800 text-[16px] font-roboto-medium">SASARAN</h2>
+       <p>Seluruh masyarakat, terutama kalangan pelajar remaja <br> untuk meningkatkan minat literasi di Indonesia. </p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+
+  <!-- Content-3 -->
+  <section class="bg-gray-200 flex flex-row items-center justify-center">
+   <div class="text-center w-[275px] px-2 py-4 flex flex-col justify-center items-center gap-4">
+    <div
+     class="w-[130px] h-[130px] rounded-full border border-gray-400 bg-white flex flex-col justify-center items-center">
+     <img src="./Assets/beranda/daftar-diri.png" alt="Daftar Diri">
+    </div>
+    <h1 class="font-roboto-medium text-[24px]">Daftar Diri</h1>
+    <p class="text-[18px]">Syaratnya kamu wajib pelajar SMP dan SMA atau sederajat untuk bisa mendaftarkan diri melalui
+     website ini.</p>
+   </div>
+   <div class="text-center w-[275px] px-2 py-4 flex flex-col justify-center items-center gap-4">
+    <div
+     class="w-[130px] h-[130px] rounded-full border border-gray-400 bg-white flex flex-col justify-center items-center">
+     <img src="./Assets/beranda/membaca-buku.png" alt="Membaca Buku">
+    </div>
+    <h1 class="font-roboto-medium text-[24px]">Membaca Buku</h1>
+    <p class="text-[18px]">Mulai pilih beberapa buku yang akan kamu Review dan tulis atau videokan Resensi Buku nya.</p>
+   </div>
+   <div class="text-center w-[250px] px-2 py-4 flex flex-col justify-center items-center gap-4 mt-7">
+    <div
+     class="w-[130px] h-[130px] rounded-full border border-gray-400 bg-white flex flex-col justify-center items-center">
+     <img src="./Assets/beranda/upload.png" alt="Upload">
+    </div>
+    <h1 class="font-roboto-medium text-[24px]">Upload</h1>
+    <p class="text-[18px]">Unggah resensi buku yang kamu pilih melalui website ini ataupun upload konten video pembacaan
+     resensi buku di Sosial Media kamu.</p>
+   </div>
+   <div class="text-center w-[275px] px-2 py-4 flex flex-col justify-center items-center gap-4">
+    <div
+     class="w-[130px] h-[130px] rounded-full border border-gray-400 bg-white flex flex-col justify-center items-center">
+     <img src="./Assets/beranda/bagikan.png" alt="Bagikan">
+    </div>
+    <h1 class="font-roboto-medium text-[24px]">Bagikan</h1>
+    <p class="text-[18px]">Bagikan postingan kamu di website ke semua jejaring agar konten kamu bisa banyak di komentari
+     dan disukai.</p>
+   </div>
+  </section>
+
+  <!-- Content-4 -->
+  <section class="w-full mx-auto py-[67px]">
+   <div class="flex flex-row justify-center items-center gap-40">
+    <div class="flex flex-col gap-4">
+     <span class="text-green-500 font-roboto-medium">F.A.Q</span>
+     <h1 class="text-[48px] font-roboto-black">Frequently Asked <br> Questions</h1>
+     <div>
+      <button onclick="Question1()" class="flex flex-row items-center justify-between w-[442px]">
+       <h1 class="text-[18px] font-roboto-medium text-gray-700">Siapa saja yang bisa mengikuti lomba ini?</h1>
+       <span class="plus text-[28px]">+</span>
+       <span class="negative text-[28px] font-roboto-medium hidden">-</span>
+      </button>
+      <p class="answer-1 w-[442px] text-[18px] text-gray-500 py-4 text-left hidden">Lomba Gerakan Indonesia Membaca
+       terbuka untuk pelajar SMP dan SMA sederajat. Kategori lomba akan dipisahkan
+       berdasarkan jenjang pendidikan.</p>
+      <hr>
+     </div>
+     <div>
+      <button onclick="Question2()" class="flex flex-row items-center justify-between w-[442px]">
+       <h1 class="text-[18px] text-gray-700 font-roboto-medium">Apa saja kategori lombanya?</h1>
+       <span class="plus2 text-[28px]">+</span>
+       <span class="negative2 text-[28px] font-roboto-medium hidden">-</span>
+      </button>
+      <p class="answer-2 w-[442px] text-[18px] text-gray-500 py-4 text-left hidden">Lomba Gerakan Indonesia Membaca
+       terbuka untuk pelajar SMP dan SMA sederajat. Kategori lomba akan dipisahkan
+       berdasarkan jenjang pendidikan.</p>
+      <hr>
+     </div>
+     <div>
+      <button onclick="Question3()" class="flex flex-row items-center justify-between w-[442px]">
+       <h1 class="text-[18px] font-roboto-medium text-gray-700">Apa saja syarat untuk mengikuti lomba ini?</h1>
+       <span class="plus3 text-[28px]">+</span>
+       <span class="negative3 text-[28px] font-roboto-medium hidden">-</span>
+      </button>
+      <p class="answer-3 w-[442px] text-[18px] text-gray-500 py-4 text-left hidden">Lomba Gerakan Indonesia Membaca
+       terbuka untuk pelajar SMP dan SMA sederajat. Kategori lomba akan dipisahkan
+       berdasarkan jenjang pendidikan.</p>
+      <hr>
+     </div>
+    </div>
+    <div class="flex flex-col items-center justify-center gap-5">
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/zgHUDnZ_Nlw?si=Isx6ax1rbI7yPyFf"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+     <button
+      class="bg-gray-100 w-[390px] h-[54px] flex flex-col justify-center items-center rounded-md hover:bg-black hover:text-white animation duration-200">
+      <span class="font-roboto-medium text-center">LIHAT VIDEO LAINNYA</span>
+     </button>
+    </div>
+   </div>
+  </section>
+ </main>
+
+ <!-- Footer1 -->
+ <footer class="w-full bg-gray-800 mx-auto">
+  <div
+   class="relative z-10 flex flex-row items-center mx-auto -pt-20 justify-center w-[1100px] h-[200px] bg-green-600 rounded-3xl gap-40">
+   <h1 class="font-roboto-black text-white text-[48px]">Daftarkan Diri Kamu <br> Sekarang Juga!</h1>
+   <button
+    class="bg-blue-700 flex flex-col justify-center items-center text-white font-roboto-medium w-[300px] h-[68px] rounded-3xl">IKUT
+    LOMBA</button>
+  </div>
+  <div class="flex flex-wrap py-[67px] justify-center gap-20">
+   <div class="pb-10">
+    <div class="flex flex-row items-center gap-4 py-[64px]">
+     <img src="./Assets/logo.png" alt="Logo" />
+     <div class="flex flex-col text-nowrap">
+      <span class="text-sm font-roboto-black font-roboto-medium text-white/25">PERPUSTAKAAN NASIONAL</span>
+      <span class="text-[10px] font-roboto-medium text-gray-400/50">REPUBLIK INDONESIA</span>
+     </div>
+    </div>
+    <img src="./Assets/beranda/gerakan-indo-membaca.png" alt="Gerakan Indonesia Membaca" class="-mt-8">
+   </div>
+   <div class="flex flex-col justify-center">
+    <h1 class="font-roboto-medium text-white text-[18px] -mt-5">Referensi Buku Digital</h1>
+    <ul class="text-white/50 text-[14px]">
+     <li><a href="">Ipusnas</a></li>
+     <li><a href="">BintangPusnas</a></li>
+     <li><a href="">Buku Digital Kemendikbud</a></li>
+    </ul>
+   </div>
+   <div class="flex flex-col justify-center">
+    <h1 class="font-roboto-medium text-white text-[18px]">Tautan Terkait</h1>
+    <ul class="text-white/50 text-[14px]">
+     <li><a href="">perpusnas.go.id</a></li>
+     <li><a href="">onesearch.id</a></li>
+     <li><a href="">isbn.perpusnas.go.id</a></li>
+     <li><a href="">e-resources.perpusnas.go.id</a></li>
+    </ul>
+   </div>
+   <div class="flex flex-col justify-center">
+    <h1 class="font-roboto-medium text-white text-[18px]">Kontak Kami</h1>
+    <ul class="text-white/50 text-[14px]">
+     <li><a href="">pappbb@perpusnas.go.id</a></li>
+     <li>
+      <p>0811-2222-3333</p>
+     </li>
+     <li>
+      <p>Jalan Salemba Raya No. 28A</p>
+     </li>
+     <li>
+      <p>Jakarta, 10430</p>
+     </li>
+    </ul>
+   </div>
+  </div>
+  <div class="flex flex-row items-center gap-4 max-w-[1280px] mx-auto px-24 pb-4">
+   <img src="./Assets/footer/facebook.png" alt="facebook">
+   <img src="./Assets/footer/instagram.png" alt="instagram">
+   <img src="./Assets/footer/tiktok.png" alt="tiktok">
+   <p class="text-white">@perpusnas</p>
+  </div>
+ </footer>
+
+ <!-- Footer-2 -->
+ <footer class="bg-white py-10 max-w-[1280px] mx-auto px-24 flex flex-rows justify-between items-center">
+  <div class="text-[14px] font-roboto-medium">
+   <span id="copyright"></span>
+   <span class="text-green-600 underline text-[14px]">Perpustakaan Nasional Republik Indonesia</span>
+  </div>
+  <div class="flex flex-row items-center gap-5">
+   <span class="font-roboto-medium ">Syarat & Ketentuan</span>
+   <span class="font-roboto-medium ">Kebijakan Privasi</span>
+  </div>
+ </footer>
+
+ <!-- Swiper JS -->
+ <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+ <!-- Initialize Swiper -->
+ <script>
+  var swiper = new Swiper(".mySwiper", {
+   slidesPerView: 1,
+   spaceBetween: 30,
+   keyboard: {
+    enabled: true,
+   },
+   pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+   },
+  });
+
+  function Question1() {
+   document.querySelector('.answer-1').classList.toggle('hidden')
+   document.querySelector('.plus').classList.toggle('hidden')
+   document.querySelector('.negative').classList.toggle('hidden')
+  }
+  function Question2() {
+   document.querySelector('.answer-2').classList.toggle('hidden')
+   document.querySelector('.plus2').classList.toggle('hidden')
+   document.querySelector('.negative2').classList.toggle('hidden')
+  }
+  function Question3() {
+   document.querySelector('.answer-3').classList.toggle('hidden')
+   document.querySelector('.plus3').classList.toggle('hidden')
+   document.querySelector('.negative3').classList.toggle('hidden')
+  }
+
+  document.getElementById('copyright').innerHTML = '&copy Copyright ' + new Date().getFullYear() + ' | '
+ </script>
+</body>
+
+</html>
