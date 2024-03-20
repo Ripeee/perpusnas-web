@@ -16,19 +16,19 @@
 <body class="bg-white font-roboto">
   <!-- NAVBAR -->
   <header class="fixed z-20 w-full bg-white shadow-md">
-    <nav class="max-w-[1280px] mx-auto flex flex-row justify-between items-center gap-[16px] ">
+    <nav class="max-w-[1280px] mx-auto flex flex-row justify-between items-center gap-[16px] px-10">
       <div class="flex flex-row items-center gap-4 py-[24px]">
         <img src="./Assets/logo.png" alt="Logo" />
         <div class="flex flex-col text-nowrap">
-          <span class="text-sm font-bold font-roboto-medium">PERPUSTAKAAN NASIONAL</span>
-          <span class="text-[10px] font-medium text-gray-400">REPUBLIK INDONESIA</span>
+          <span class="text-[10px] sm:text-[14px] font-bold font-roboto-medium ">PERPUSTAKAAN NASIONAL</span>
+          <span class="text-[8px] sm:text-[14px] font-medium text-gray-400">REPUBLIK INDONESIA</span>
         </div>
       </div>
-      <div class="xl:hidden cursor-pointer">
-        <i class="hambuger fa-solid fa-bars opacity-1"></i>
-        <i class="close fa-solid fa-xmark opacity-0 hidden"></i>
-      </div>
-      <ul class="flex flex-row items-center font-medium">
+      <button name="hambuger" onclick="HamburgerGrup()" class="w-full flex justify-end xl:hidden cursor-pointer">
+        <i class="hamburger fa-solid fa-bars opacity-1 animate transition-all duration-300"></i>
+        <i class="close fa-solid fa-xmark opacity-0 animate transition-all duration-300 hidden"></i>
+      </button>
+      <ul class="group-list hidden w-full flex flex-col items-start justify-center xl:flex xl:flex-row items-center font-medium">
         <li>
           <a href="#" class="bg-green-600 text-white px-[30px] py-[38px] flex justify-center items-center">Beranda</a>
         </li>
@@ -80,7 +80,7 @@
             Kami</a>
         </li>
       </ul>
-      <div class="flex flex-row items-center gap-12">
+      <div class="hidden xl:flex flex-row items-center gap-12">
         <button>
           <img src="./Assets/search.png" alt="">
         </button>
@@ -163,7 +163,7 @@
         <img src="./Assets/beranda/bumi-manusia.png" alt="Bumi Manusia">
         <div class="flex flex-col gap-5">
           <span class="text-green-600 font-roboto-medium text-[16px]">TENTANG</span>
-          <h1 class="font-roboto-black text-[48px]">Gerakan Indonesia <br> Membacara</h1>
+          <h1 class="font-roboto-black text-[48px]">Gerakan Indonesia <br> Membaca</h1>
           <div class="flex flex-col gap-8">
             <div class="flex flex-col gap-3">
               <h2 class="text-gray-7800 text-[16px] font-roboto-medium">TUJUAN</h2>
@@ -348,8 +348,8 @@
       <span class="text-green-600 underline text-[14px]">Perpustakaan Nasional Republik Indonesia</span>
     </div>
     <div class="flex flex-row items-center gap-5">
-      <span class="font-roboto-medium ">Syarat & Ketentuan</span>
-      <span class="font-roboto-medium ">Kebijakan Privasi</span>
+      <a href="" class="font-roboto-medium ">Syarat & Ketentuan</a>
+      <a href="" class="font-roboto-medium ">Kebijakan Privasi</a>
     </div>
   </footer>
 

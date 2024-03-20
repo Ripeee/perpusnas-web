@@ -10,6 +10,14 @@ var swiper = new Swiper(".mySwiper", {
 	},
 });
 
+function HamburgerGrup() {
+	document.querySelector(".hamburger").classList.toggle("hidden");
+	document.querySelector(".hamburger").classList.toggle("opcity-0");
+	document.querySelector(".close").classList.toggle("hidden");
+	document.querySelector(".close").classList.toggle("opacity-0");
+	document.querySelector(".group-list").classList.toggle("hidden");
+}
+
 function Question1() {
 	document.querySelector(".answer-1").classList.toggle("hidden");
 	document.querySelector(".plus").classList.toggle("hidden");
@@ -28,3 +36,4 @@ function Question3() {
 
 document.getElementById("copyright").innerHTML =
 	"&copy Copyright " + new Date().getFullYear() + " | ";
+ 
