@@ -16,7 +16,7 @@ function HamburgerGrup() {
 	document.querySelector(".close").classList.toggle("hidden");
 	document.querySelector(".close").classList.toggle("opacity-0");
 	document.querySelector(".group-list").classList.toggle("hidden");
-	document.body.classList.toggle('overflow-y-hidden')
+	document.body.classList.toggle('overflow-hidden')
 }
 
 function ResensiDropdown() {
