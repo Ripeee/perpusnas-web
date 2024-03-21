@@ -12,19 +12,12 @@ var swiper = new Swiper(".mySwiper", {
 
 function HamburgerGrup() {
 	document.querySelector(".hamburger").classList.toggle("hidden");
-	document.querySelector(".hamburger").classList.toggle("opacity-0");
+	document.querySelector(".hamburger").classList.toggle("opcity-0");
 	document.querySelector(".close").classList.toggle("hidden");
 	document.querySelector(".close").classList.toggle("opacity-0");
 	document.querySelector(".group-list").classList.toggle("hidden");
-
-	// Toggle body scrolling
-	if (document.body.style.overflowY === "hidden") {
-		document.body.style.overflowY = "auto";
-	} else {
-		document.body.style.overflowY = "hidden";
-	}
+	document.body.classList.toggle('overflow-y-hidden')
 }
-
 
 function ResensiDropdown() {
 	document.querySelector(".dropdown-icon").classList.toggle("rotate-180");
