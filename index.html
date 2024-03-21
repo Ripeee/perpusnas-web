@@ -32,23 +32,25 @@
         </button>
       </div>
       <ul
-        class="group-list hidden w-full flex flex-col items-start justify-start h-[80dvh] min-[360px]:h-[100dvh] xl:flex xl:flex-row xl:items-center overflow-y-auto xl:h-auto xl:w-auto font-medium">
+        class="group-list hidden w-full flex flex-col items-start justify-start h-[80dvh] min-[360px]:h-[100dvh] xl:flex xl:flex-row xl:items-center xl:h-auto xl:w-auto font-medium">
         <li class="w-full">
           <a href="#"
-            class="beranda bg-green-600 text-white px-[30px] py-[16px] sm:py-[38px] flex justify-start items-start xl:justify-center xl:items-center">Beranda</a>
+            class="beranda bg-green-600 text-white text-gray-600 px-[30px] py-[16px] sm:py-[38px] flex justify-start items-start xl:justify-center xl:items-center">Beranda</a>
         </li>
         <li class="w-full">
           <button onclick="ResensiDropdown()"
-            class="resensi xl:hidden cursor-pointer w-full flex flex-wrap justify-between items-center px-[30px] py-[16px] sm:py-[38px]">
+            class="resensi xl:hidden cursor-pointer w-full flex flex-wrap justify-between items-center px-[30px] py-[16px] sm:py-[28px]">
             <p class="flex justify-start items-start xl:justify-center xl:items-center">
               Resensi</p>
             <i class="dropdown-icon fa-solid fa-angle-up animate duration-200 rotate-0"></i>
             <div class="list-dropdown hidden w-full xl:hidden pt-[40px]">
               <ul class="flex flex-col justify-start items-start gap-4">
-                <li><a href="resensi-tulisan.html" class="text-white font-roboto text-nowrap resensi-tulisan hover:border-b-2"> Resensi
+                <li><a href="resensi-tulisan.html"
+                    class="text-white font-roboto text-nowrap resensi-tulisan hover:border-b-2"> Resensi
                     Tulisan</a>
                 </li>
-                <li><a href="resensi-video.html" class="text-white font-roboto text-nowrap resensi-video hover:border-b-2"> Resensi
+                <li><a href="resensi-video.html"
+                    class="text-white font-roboto text-nowrap resensi-video hover:border-b-2"> Resensi
                     Video</a></li>
               </ul>
             </div>
@@ -57,7 +59,7 @@
             <p
               class="text-gray-500 px-[30px] py-[38px] flex justify-start items-start xl:justify-center xl:items-center hover:bg-green-600 hover:text-white duration-300 animation">
               Resensi</p>
-            <div class="hidden xl:hover:inline-block dropdown-content rounded-b-md">
+            <div class="hidden xl:hover:inline-block dropdown-content">
               <ul class="flex flex-col gap-4 py-4 pl-4 pr-16">
                 <li>
                   <a href="resensi-tulisan.html"
@@ -73,16 +75,18 @@
         </li>
         <li class="w-full">
           <button onclick="InformasiDropdown()"
-            class="informasi xl:hidden cursor-pointer w-full flex flex-wrap justify-between items-center px-[30px] py-[16px] sm:py-[38px] text-black">
+            class="informasi xl:hidden cursor-pointer w-full flex flex-wrap justify-between items-center px-[30px] py-[16px] sm:py-[28px] text-black">
             <p class="flex justify-start items-start xl:justify-center xl:items-center">
               Informasi</p>
             <i class="dropdown-icon2 fa-solid fa-angle-up animate duration-200 rotate-0"></i>
             <div class="list-dropdown2 hidden w-full xl:hidden pt-[40px]">
               <ul class="flex flex-col justify-start items-start gap-4">
-                <li><a href="informasi-berita.html" class="text-white font-roboto text-nowrap informasi-berita hover:border-b-2">
+                <li><a href="informasi-berita.html"
+                    class="text-white font-roboto text-nowrap informasi-berita hover:border-b-2">
                     Berita</a>
                 </li>
-                <li><a href="informasi-pengumuman.html" class="text-white font-roboto text-nowrap informasi-pengumuman hover:border-b-2">
+                <li><a href="informasi-pengumuman.html"
+                    class="text-white font-roboto text-nowrap informasi-pengumuman hover:border-b-2">
                     Pengumuman</a></li>
               </ul>
             </div>
@@ -108,11 +112,11 @@
         </li>
         <li class="w-full">
           <a href=""
-            class="text-gray-500 px-[30px] py-[16px] sm:py-[38px] flex justify-start items-start xl:justify-center xl:items-center hover:bg-green-600 hover:text-white duration-300 animation">Dokumen</a>
+            class="text-gray-500 px-[30px] py-[16px] sm:py-[28px] flex justify-start items-start xl:justify-center xl:items-center hover:bg-green-600 hover:text-white duration-300 animation">Dokumen</a>
         </li>
         <li class="w-full">
           <a href=""
-            class="text-center text-nowrap text-gray-500 px-[30px] py-[16px] sm:py-[38px] flex justify-start items-start xl:justify-center xl:items-center hover:bg-green-600 hover:text-white duration-300 animation">Hubungi
+            class="text-center text-nowrap text-gray-500 px-[30px] py-[16px] sm:py-[28px] flex justify-start items-start xl:justify-center xl:items-center hover:bg-green-600 hover:text-white duration-300 animation">Hubungi
             Kami</a>
         </li>
         <div class="xl:hidden w-full py-5 flex flex-col justify-center items-center gap-12">
@@ -123,7 +127,7 @@
             Sekarang</button>
         </div>
       </ul>
-      <div class="hidden xl:flex flex-row items-center gap-10 pb-4">
+      <div class="hidden xl:flex flex-row items-center gap-10">
         <button>
           <img src="./Assets/search.png" alt="">
         </button>
@@ -140,17 +144,17 @@
         <div class="swiper-wrapper">
           <!-- Slide-1 -->
           <div class="swiper-slide">
-            <img src="./Assets/beranda/kubik.png" alt="Kubik" class="absolute top-0 right-0 cover h-[100dvh] xl:h-auto">
+            <img src="./Assets/beranda/kubik.png" alt="Kubik" class="absolute top-0 right-0 cover h-[100dvh] lg:h-auto">
             <div
-              class="relative z-10 flex flex-col-reverse justify-center text-center xl:text-start xl:flex-row items-center xl:justify-between gap-5 xl:gap-0 px-20 py-[30px] xl:py-[80px]">
+              class="relative z-10 flex flex-col-reverse justify-center text-center lg:text-start lg:flex-row items-center lg:justify-between gap-5 lg:gap-0 px-20 py-[30px] lg:py-[80px]">
               <div class="flex flex-col gap-4">
-                <h1 class="font-roboto-black text-black text-[18px] text-nowrap min-[380px]:text-[24px] xl:text-[48px]">
+                <h1 class="font-roboto-black text-black text-[18px] text-nowrap min-[380px]:text-[24px] lg:text-[36px] xl:text-[48px]">
                   Ayo! Ikut Lomba <br>
                   Gerakan Indonesia Membaca!</h1>
-                <p class="text-[12px] min-[380px]:text-[18px]">Tunjukkan semangat bacamu dan sebarkan kecintaan pada
+                <p class="text-[12px] min-[380px]:text-[16px]">Tunjukkan semangat bacamu dan sebarkan kecintaan pada
                   buku.<br>
                   Raih hadiah jutaan rupiah dan jadilah duta literasi Indonesia!</p>
-                <div class="flex flex-row justify-center xl:justify-start items-center gap-4">
+                <div class="flex flex-row justify-center lg:justify-start items-center gap-4">
                   <button
                     class="bg-green-700 rounded-full w-[40px] h-[40px] p-3 min-[380px]:p-0 min-[380px]:w-[68px] min-[380px]:h-[68px] flex justify-center items-center">
                     <img src="./Assets/panah-kanan.png" alt="panah-kanan">
@@ -219,21 +223,21 @@
 
     <!-- Content-2 -->
     <section class="w-full max-w-[1280px] mx-auto py-[67px] px-20">
-      <div class="flex flex-col justify-center items-center xl:flex-row items-center gap-20 xl:gap-40">
+      <div class="flex flex-col justify-center items-center lg:flex-row items-center gap-20 lg:gap-10 xl:gap-40">
         <img src="./Assets/beranda/bumi-manusia.png" alt="Bumi Manusia">
         <div class="flex flex-col gap-5">
-          <span class="text-green-600 font-roboto-medium text-[14px] xl:text-[16px] text-center">TENTANG</span>
-          <h1 class="font-roboto-black text-center xl:text-start text-[24px] xl:text-[48px] text-nowrap">Gerakan
+          <span class="text-green-600 font-roboto-medium text-[14px] lg:text-[16px] text-center lg:text-start">TENTANG</span>
+          <h1 class="font-roboto-black text-center lg:text-start text-[28px] lg:text-[48px] text-nowrap">Gerakan
             Indonesia <br> Membaca</h1>
-          <div class="flex flex-col gap-8 text-center">
+          <div class="flex flex-col gap-8 text-center lg:text-start">
             <div class="flex flex-col gap-3">
-              <h2 class="text-gray-7800 text-[12px] xl:text-[16px] font-roboto-medium">TUJUAN</h2>
-              <p class="text-[10px] xl:text-[12px]">Meningkatkan minat baca masyarakat dan <br> membangun budaya baca di
+              <h2 class="text-gray-7800 text-[16px] lg:text-[20px] font-roboto-medium">TUJUAN</h2>
+              <p class="text-[14px] lg:text-[16px]">Meningkatkan minat baca masyarakat dan <br> membangun budaya baca di
                 Indonesia.</p>
             </div>
             <div class="flex flex-col gap-3">
-              <h2 class="text-gray-7800 text-[12px] xl:text-[16px] font-roboto-medium">SASARAN</h2>
-              <p class="text-[10px] xl:text-[12px]">Seluruh masyarakat, terutama kalangan pelajar remaja <br> untuk
+              <h2 class="text-gray-7800 text-[16px] lg:text-[20px] font-roboto-medium">SASARAN</h2>
+              <p class="text-[14px] lg:text-[16px]">Seluruh masyarakat, terutama kalangan pelajar remaja <br> untuk
                 meningkatkan minat literasi di
                 Indonesia. </p>
             </div>
@@ -288,8 +292,8 @@
     <!-- Content-4 -->
     <section class="w-full mx-auto pt-[67px] pb-40">
       <div class="flex flex-col-reverse xl:flex-row justify-center items-center gap-40">
-        <div class="flex flex-col justify-center items-center gap-4">
-          <span class="text-green-500 font-roboto-medium text-center sm:text-start">F.A.Q</span>
+        <div class="flex flex-col justify-center items-center lg:items-start gap-4">
+          <span class="text-green-500 font-roboto-medium text-center lg:text-start">F.A.Q</span>
           <h1 class="text-[32px] sm:text-[48px] text-center xl:text-start font-roboto-black text-nowrap">Frequently
             Asked <br> Questions</h1>
           <div>
@@ -326,7 +330,8 @@
           <div>
             <button onclick="Question3()"
               class="flex flex-row items-center justify-between min-[300px]:w-[294px] min-[448px]:w-[442px] text-center xl:text-start">
-              <h1 class="text-[14px] sm:text-[18px] font-roboto-medium text-gray-700">Apa saja syarat untuk mengikuti lomba ini?</h1>
+              <h1 class="text-[14px] sm:text-[18px] font-roboto-medium text-gray-700">Apa saja syarat untuk mengikuti
+                lomba ini?</h1>
               <span class="plus3 text-[20px] sm:text-[28px]">+</span>
               <span class="negative3 text-[18px] font-roboto-medium hidden">-</span>
             </button>
@@ -358,7 +363,8 @@
   <footer class="w-full bg-gray-800 px-5 xl:mx-auto">
     <div
       class="relative z-10 flex flex-row items-center mx-auto -pt-20 justify-center w-[290px] h-[100px] sm:w-[600px] sm:h-[180px] xl:w-[1100px] xl:h-[200px] bg-green-600 rounded-xl sm:rounded-3xl gap-6 sm:gap-20 xl:gap-40 absolute -top-20">
-      <h1 class="font-roboto-black text-white text-[12px] sm:text-[32px] text-nowrap xl:text-[48px]">Daftarkan Diri Kamu <br> Sekarang Juga!</h1>
+      <h1 class="font-roboto-black text-white text-[12px] sm:text-[32px] text-nowrap xl:text-[48px]">Daftarkan Diri Kamu
+        <br> Sekarang Juga!</h1>
       <button
         class="bg-blue-700 flex flex-col justify-center items-center text-white text-[10px] w-[100px] h-[50px] font-roboto-medium w-[100px] sm:w-[150px] xl:w-[300px] sm:h-[68px] sm:text-[14px] rounded-xl sm:rounded-3xl">IKUT
         LOMBA</button>
@@ -407,7 +413,8 @@
         </ul>
       </div>
     </div>
-    <div class="flex flex-row justify-center md:justify-start items-center gap-4 max-w-[1280px] mx-auto px-32 pt-4 pb-4">
+    <div
+      class="flex flex-row justify-center md:justify-start items-center gap-4 max-w-[1280px] mx-auto px-32 pt-4 pb-4">
       <img src="./Assets/footer/facebook.png" alt="facebook" class="w-[30px]">
       <img src="./Assets/footer/instagram.png" alt="instagram">
       <img src="./Assets/footer/tiktok.png" alt="tiktok">
@@ -416,7 +423,8 @@
   </footer>
 
   <!-- Footer-2 -->
-  <footer class="bg-white py-10 max-w-[1280px] mx-auto px-24 flex flex-wrap justify-center xl:flex-row xl:justify-between items-center">
+  <footer
+    class="bg-white py-10 max-w-[1280px] mx-auto px-24 flex flex-wrap justify-center xl:flex-row sm:justify-between items-center">
     <div class="text-[10px] md:text-[14px] font-roboto-medium text-nowrap">
       <span id="copyright"></span>
       <span class="text-green-600 underline md:text-[14px]">Perpustakaan Nasional Republik Indonesia</span>
