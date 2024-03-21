@@ -120,15 +120,34 @@
             Kami</a>
         </li>
         <div class="xl:hidden w-full py-5 flex flex-col justify-center items-center gap-12">
-          <button>
-            <img src="./Assets/search.png" alt="">
-          </button>
-          <button name="daftar" class="text-nowrap py-4 px-6 bg-blue-800 text-white rounded-[120px]">Daftar
-            Sekarang</button>
-        </div>
+          <div class=" xl:hidden w-full py-5 flex flex-col justify-center items-center gap-12">
+            <div class="input-container">
+              <input type="text" name="text" class="input" placeholder="Search...">
+              <span class="icon">
+                <svg width="19px" height="19px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path opacity="1" d="M14 5H20" stroke="#000" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round">
+                    </path>
+                    <path opacity="1" d="M14 8H17" stroke="#000" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round">
+                    </path>
+                    <path d="M21 11.5C21 16.75 16.75 21 11.5 21C6.25 21 2 16.75 2 11.5C2 6.25 6.25 2 11.5 2"
+                      stroke="#000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path opacity="1" d="M22 22L20 20" stroke="#000" stroke-width="3.5" stroke-linecap="round"
+                      stroke-linejoin="round"></path>
+                  </g>
+                </svg>
+              </span>
+            </div>
+            <button name="daftar" class="text-nowrap py-4 px-6 bg-blue-800 text-white rounded-[120px]">Daftar
+              Sekarang</button>
+          </div>
       </ul>
       <div class="hidden xl:flex flex-row items-center gap-10">
-        <button>
+        <button onclick="SearchButton()">
           <img src="./Assets/search.png" alt="">
         </button>
         <button name="daftar" class="text-nowrap py-4 px-6 bg-blue-800 text-white rounded-[120px]">Daftar
@@ -136,6 +155,32 @@
       </div>
     </nav>
   </header>
+
+  <div
+    class="search-bg z-40 bg-green-700/90 flex flex-col justify-center items-center w-full h-[100dvh] animate duration-300 absolute hidden">
+    <div class="input-container">
+      <input type="text" name="text" class="input" placeholder="Search...">
+      <span class="icon">
+        <svg width="19px" height="19px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+          <g id="SVGRepo_iconCarrier">
+            <path opacity="1" d="M14 5H20" stroke="#000" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round">
+            </path>
+            <path opacity="1" d="M14 8H17" stroke="#000" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round">
+            </path>
+            <path d="M21 11.5C21 16.75 16.75 21 11.5 21C6.25 21 2 16.75 2 11.5C2 6.25 6.25 2 11.5 2" stroke="#000"
+              stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path opacity="1" d="M22 22L20 20" stroke="#000" stroke-width="3.5" stroke-linecap="round"
+              stroke-linejoin="round"></path>
+          </g>
+        </svg>
+      </span>
+    </div>
+    <button onclick="CloseSearch()" class="font-roboto-black text-[30px]">X</button>
+  </div>
 
   <main class="w-full mx-auto">
     <!-- Content 1 -->
@@ -148,7 +193,8 @@
             <div
               class="relative z-10 flex flex-col-reverse justify-center text-center lg:text-start lg:flex-row items-center lg:justify-between gap-5 lg:gap-0 px-20 py-[30px] lg:py-[80px]">
               <div class="flex flex-col gap-4">
-                <h1 class="font-roboto-black text-black text-[18px] text-nowrap min-[380px]:text-[24px] lg:text-[36px] xl:text-[48px]">
+                <h1
+                  class="font-roboto-black text-black text-[18px] text-nowrap min-[380px]:text-[24px] lg:text-[36px] xl:text-[48px]">
                   Ayo! Ikut Lomba <br>
                   Gerakan Indonesia Membaca!</h1>
                 <p class="text-[12px] min-[380px]:text-[16px]">Tunjukkan semangat bacamu dan sebarkan kecintaan pada
@@ -226,7 +272,8 @@
       <div class="flex flex-col justify-center items-center lg:flex-row items-center gap-20 lg:gap-10 xl:gap-40">
         <img src="./Assets/beranda/bumi-manusia.png" alt="Bumi Manusia">
         <div class="flex flex-col gap-5">
-          <span class="text-green-600 font-roboto-medium text-[14px] lg:text-[16px] text-center lg:text-start">TENTANG</span>
+          <span
+            class="text-green-600 font-roboto-medium text-[14px] lg:text-[16px] text-center lg:text-start">TENTANG</span>
           <h1 class="font-roboto-black text-center lg:text-start text-[28px] lg:text-[48px] text-nowrap">Gerakan
             Indonesia <br> Membaca</h1>
           <div class="flex flex-col gap-8 text-center lg:text-start">
@@ -364,7 +411,8 @@
     <div
       class="relative z-10 flex flex-row items-center mx-auto -pt-20 justify-center w-[290px] h-[100px] sm:w-[600px] sm:h-[180px] xl:w-[1100px] xl:h-[200px] bg-green-600 rounded-xl sm:rounded-3xl gap-6 sm:gap-20 xl:gap-40 absolute -top-20">
       <h1 class="font-roboto-black text-white text-[12px] sm:text-[32px] text-nowrap xl:text-[48px]">Daftarkan Diri Kamu
-        <br> Sekarang Juga!</h1>
+        <br> Sekarang Juga!
+      </h1>
       <button
         class="bg-blue-700 flex flex-col justify-center items-center text-white text-[10px] w-[100px] h-[50px] font-roboto-medium w-[100px] sm:w-[150px] xl:w-[300px] sm:h-[68px] sm:text-[14px] rounded-xl sm:rounded-3xl">IKUT
         LOMBA</button>
@@ -378,7 +426,8 @@
             <span class="text-[10px] font-roboto-medium text-gray-400/50">REPUBLIK INDONESIA</span>
           </div>
         </div>
-        <img src="./Assets/beranda/gerakan-indo-membaca.png" alt="Gerakan Indonesia Membaca" class="-mt-8" width="100" height="100">
+        <img src="./Assets/beranda/gerakan-indo-membaca.png" alt="Gerakan Indonesia Membaca" class="-mt-8" width="100"
+          height="100">
       </div>
       <div class="flex flex-col justify-center">
         <h1 class="font-roboto-medium text-white text-[18px] -mt-5">Referensi Buku Digital</h1>

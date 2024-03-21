@@ -119,15 +119,31 @@
             Kami</a>
         </li>
         <div class=" xl:hidden w-full py-5 flex flex-col justify-center items-center gap-12">
-          <button>
-            <img src="./Assets/search.png" alt="">
-          </button>
+          <div class="input-container">
+            <input type="text" name="text" class="input" placeholder="Search...">
+            <span class="icon">
+              <svg width="19px" height="19px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path opacity="1" d="M14 5H20" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  </path>
+                  <path opacity="1" d="M14 8H17" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  </path>
+                  <path d="M21 11.5C21 16.75 16.75 21 11.5 21C6.25 21 2 16.75 2 11.5C2 6.25 6.25 2 11.5 2" stroke="#000"
+                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <path opacity="1" d="M22 22L20 20" stroke="#000" stroke-width="3.5" stroke-linecap="round"
+                    stroke-linejoin="round"></path>
+                </g>
+              </svg>
+            </span>
+          </div>
           <button name="daftar" class="text-nowrap py-4 px-6 bg-blue-800 text-white rounded-[120px]">Daftar
             Sekarang</button>
         </div>
       </ul>
       <div class="hidden xl:flex flex-row items-center gap-12">
-        <button>
+        <button onclick="SearchButton()">
           <img src="./Assets/search.png" alt="">
         </button>
         <button name="daftar" class="text-nowrap py-4 px-6 bg-blue-800 text-white rounded-[120px]">Daftar
@@ -136,13 +152,39 @@
     </nav>
   </header>
 
-  <main class="max-w-[1280px] pt-40 mx-auto">
+  <div
+    class="search-bg z-40 bg-green-700/90 flex flex-col justify-center items-center w-full h-[100dvh] animate duration-300 absolute hidden">
+    <div class="input-container">
+      <input type="text" name="text" class="input" placeholder="Search...">
+      <span class="icon">
+        <svg width="19px" height="19px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+          <g id="SVGRepo_iconCarrier">
+            <path opacity="1" d="M14 5H20" stroke="#000" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round">
+            </path>
+            <path opacity="1" d="M14 8H17" stroke="#000" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round">
+            </path>
+            <path d="M21 11.5C21 16.75 16.75 21 11.5 21C6.25 21 2 16.75 2 11.5C2 6.25 6.25 2 11.5 2" stroke="#000"
+              stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path opacity="1" d="M22 22L20 20" stroke="#000" stroke-width="3.5" stroke-linecap="round"
+              stroke-linejoin="round"></path>
+          </g>
+        </svg>
+      </span>
+    </div>
+    <button onclick="CloseSearch()" class="font-roboto-black text-[30px]">X</button>
+  </div>
+
+  <main class="w-full pt-40 mx-auto">
     <section>
       <div
         class="flex flex-col justify-center items-center lg:flex-row lg:justify-between lg:items-start px-10 lg:px-10 xl:px-20">
         <img
           src="https://s3-alpha-sig.figma.com/img/bf5f/e5cc/9fd480e2c313a2be3dfbadf030139c1e?Expires=1711929600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Zy66U~DgDgk33EgSvcA-rw4l4c8KNQ8loXLM0Ba8rEo6~dNORFNoqS2I7d1S6MHOQl8iB-LDULOpPyQGuH3-QWFYfoQ2wovnt0B-0eeZ6qCNZAhN7i4tMZRsUIdTvlb~QJvwB952z7XnUJ7E-IjfxOi6398SMhGoFeeVkRVUiqa8NQjEKQ69kZZLPvVKK7RHKRsA620~2U~SyVdanEtrWtxRrD7YinPDsR~H6Dnx3Fl-hjVZi4WfFfmyAz3hxFepYfCnGC0BJvtWz0UzJ8BU2OwCrA1aiFaCWR7v2-JkJtJPNnhqKvg4kx2L~zKOT4UpJB11TG3H9uCGSftZ~TnAFw__"
-          alt="Dilan 1990" class="w-[320px] lg:h-[480px] rounded-xl">
+          alt="Dilan 1990" class="w-[320px] lg:w-[450px] lg:h-[580px] rounded-xl">
         <div class="flex flex-col">
           <h1 class="font-roboto-black text-black text-[32px] text-center lg:text-start pt-10 lg:py-0 lg:text-[42px]">
             Dilan, dia adalah Dilanku tahun <br> 1990</h1>

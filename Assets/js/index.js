@@ -16,7 +16,7 @@ function HamburgerGrup() {
 	document.querySelector(".close").classList.toggle("hidden");
 	document.querySelector(".close").classList.toggle("opacity-0");
 	document.querySelector(".group-list").classList.toggle("hidden");
-	document.body.classList.toggle('overflow-hidden')
+	document.body.classList.toggle("overflow-hidden");
 }
 
 function ResensiDropdown() {
@@ -75,6 +75,26 @@ document.querySelector(".informasi").addEventListener("click", () => {
 	document.querySelector(".informasi").classList.add("text-white");
 });
 
+function SearchButton() {
+	document.querySelector(".search-bg").classList.toggle("hidden");
+	document.body.classList.toggle("overflow-hidden");
+}
+
+function CloseSearch() {
+	document.querySelector(".search-bg").classList.toggle("hidden");
+	document.body.classList.toggle("overflow-hidden");
+}
+
+document.querySelector(".input").addEventListener("keydown", (event) => {
+	if (event.key == "Enter") {
+		document.querySelector(".hamburger").classList.toggle("hidden");
+		document.querySelector(".hamburger").classList.toggle("opcity-0");
+		document.querySelector(".close").classList.toggle("hidden");
+		document.querySelector(".close").classList.toggle("opacity-0");
+		document.querySelector(".group-list").classList.toggle("hidden");
+		document.body.classList.toggle("overflow-hidden");
+	}
+});
 
 function Question1() {
 	document.querySelector(".answer-1").classList.toggle("hidden");
