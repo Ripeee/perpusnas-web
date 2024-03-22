@@ -149,6 +149,7 @@ CKEDITOR.ClassicEditor.create(document.getElementById("isiBuku"), {
 			},
 		},
 	},
+
 	mention: {
 		feeds: [
 			{
@@ -218,6 +219,31 @@ CKEDITOR.ClassicEditor.create(document.getElementById("isiBuku"), {
 		"CaseChange",
 	],
 });
+
+CKEDITOR.ClassicEditor.create(document.getElementById("isiBuku"), {
+	// CKEditor configuration
+}).then((editor) => {
+	editor.on("focus", function () {
+		const toolbar = document.querySelector(".ck-toolbar");
+		if (toolbar) {
+			toolbar.style.position = "fixed";
+			toolbar.style.width = "100%";
+			toolbar.style.top = "0";
+			toolbar.style.left = "0";
+			toolbar.style.zIndex = "9999";
+		}
+	});
+
+	editor.on("blur", function () {
+		const toolbar = document.querySelector(".ck-toolbar");
+		if (toolbar) {
+			toolbar.style.position = "static";
+			toolbar.style.width = "auto";
+			toolbar.style.zIndex = "auto";
+		}
+	});
+});
+
 
 const dropArea = document.getElementById("dropArea");
 const dropArea2 = document.getElementById("dropArea2");
