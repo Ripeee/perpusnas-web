@@ -76,8 +76,16 @@ document.querySelector(".informasi").addEventListener("click", () => {
 });
 
 function SearchButton() {
-	document.querySelector(".search-bg").classList.toggle("hidden");
+	var searchBg = document.querySelector(".search-bg");
+	var isHidden = searchBg.classList.contains("hidden");
+
+	searchBg.classList.toggle("hidden");
 	document.body.classList.toggle("overflow-hidden");
+
+	if (!isHidden) {
+		var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+		searchBg.style.top = scrollTop + "px";
+	}
 }
 
 function CloseSearch() {
@@ -87,11 +95,20 @@ function CloseSearch() {
 
 document.querySelector(".input").addEventListener("keydown", (event) => {
 	if (event.key == "Enter") {
+		document.querySelector(".input").value = "";
 		document.querySelector(".hamburger").classList.toggle("hidden");
 		document.querySelector(".hamburger").classList.toggle("opcity-0");
 		document.querySelector(".close").classList.toggle("hidden");
 		document.querySelector(".close").classList.toggle("opacity-0");
 		document.querySelector(".group-list").classList.toggle("hidden");
+		document.body.classList.toggle("overflow-hidden");
+	}
+});
+
+document.querySelector(".input-search").addEventListener("keydown", (event) => {
+	if (event.key == "Enter") {
+		document.querySelector(".input-search").value = '';
+		document.querySelector(".search-bg").classList.toggle("hidden");
 		document.body.classList.toggle("overflow-hidden");
 	}
 });
