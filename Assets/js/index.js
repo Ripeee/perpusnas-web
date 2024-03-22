@@ -76,8 +76,16 @@ document.querySelector(".informasi").addEventListener("click", () => {
 });
 
 function SearchButton() {
-	document.querySelector(".search-bg").classList.toggle("hidden");
+	var searchBg = document.querySelector(".search-bg");
+	var isHidden = searchBg.classList.contains("hidden");
+
+	searchBg.classList.toggle("hidden");
 	document.body.classList.toggle("overflow-hidden");
+
+	if (!isHidden) {
+		var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+		searchBg.style.top = scrollTop + "px";
+	}
 }
 
 function CloseSearch() {
