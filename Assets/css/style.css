@@ -108,3 +108,51 @@
     transform: translateY(calc(-50% - 5px)) scale(1.1);
   }
 }
+
+.ck-restricted-editing_mode_standard > p {
+  width: 240px;
+}
+
+.ck-toolbar {
+  width: auto;
+}
+
+.container {
+  max-width: 300px;
+  margin: 50px auto;
+}
+
+.drop-area {
+  border: 2px dashed #ccc;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+input[type="file"] {
+  color: transparent;
+  width: 34%;
+}
+
+@media only screen and (min-width: 640px) {
+  .ck-restricted-editing_mode_standard > p {
+  width: 500px;
+}
+}
+@media only screen and (min-width: 768px) {
+.ck-restricted-editing_mode_standard > p {
+  width: 600px;
+}
+}
+@media only screen and (min-width: 1080px) {
+.ck-restricted-editing_mode_standard > p {
+  width: 900px;
+}
+.ck-toolbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100px !important;
+}
+}
