@@ -95,11 +95,20 @@ function CloseSearch() {
 
 document.querySelector(".input").addEventListener("keydown", (event) => {
 	if (event.key == "Enter") {
+		document.querySelector(".input").value = "";
 		document.querySelector(".hamburger").classList.toggle("hidden");
 		document.querySelector(".hamburger").classList.toggle("opcity-0");
 		document.querySelector(".close").classList.toggle("hidden");
 		document.querySelector(".close").classList.toggle("opacity-0");
 		document.querySelector(".group-list").classList.toggle("hidden");
+		document.body.classList.toggle("overflow-hidden");
+	}
+});
+
+document.querySelector(".input-search").addEventListener("keydown", (event) => {
+	if (event.key == "Enter") {
+		document.querySelector(".input-search").value = '';
+		document.querySelector(".search-bg").classList.toggle("hidden");
 		document.body.classList.toggle("overflow-hidden");
 	}
 });
