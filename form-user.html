@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- <script src="https://cdn.ckeditor.com/ckeditor5/41.2.1/classic/ckeditor.js"></script> -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./Assets/css/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -231,20 +232,20 @@
         <div class="py-10 px-5 lg:px-20 border-2 border-gray-400 shadow-xl rounded-xl mx-20">
           <form action="">
             <div class="flex flex-col items-center gap-5">
-              <input type="text" placeholder="Judul Resensi"
+              <input name="judulResensi" type="text" placeholder="Judul Resensi"
                 class="border-2 border-gray-600 py-2 px-5 rounded-xl w-full">
               <textarea name="contentBuku" id="isiBuku"></textarea>
               <div class="flex justify-center xl:justify-start w-full">
                 <h1 class="font-roboto-black text-center xl:text-start md:text-[20px]">Identitas Buku</h1>
               </div>
               <div class="flex flex-col gap-2 w-full">
-                <input type="text" placeholder="Judul Buku"
+                <input name="judulBuku" type="text" placeholder="Judul Buku"
                   class="border-2 border-gray-600 py-2 px-5 rounded-xl w-full">
-                <input type="text" placeholder="Penulis" class="border-2 border-gray-600 py-2 px-5 rounded-xl w-full">
-                <input type="text" placeholder="Dimensi" class="border-2 border-gray-600 py-2 px-5 rounded-xl w-full">
-                <input type="text" placeholder="Tahun Terbit"
+                <input name="penulis" type="text" placeholder="Penulis" class="border-2 border-gray-600 py-2 px-5 rounded-xl w-full">
+                <input name="dimensi" type="text" placeholder="Dimensi" class="border-2 border-gray-600 py-2 px-5 rounded-xl w-full">
+                <input name="tahunTerbit" type="text" placeholder="Tahun Terbit"
                   class="border-2 border-gray-600 py-2 px-5 rounded-xl w-full">
-                <input type="text" placeholder="ISBN" class="border-2 border-gray-600 py-2 px-5 rounded-xl w-full">
+                <input name="iSBN" type="text" placeholder="ISBN" class="border-2 border-gray-600 py-2 px-5 rounded-xl w-full">
               </div>
               <div class="w-full flex gap-2 flex-col lg:flex-row justify-between">
                 <div class="mx-auto flex flex-col gap-4">
@@ -263,7 +264,7 @@
                     <label for="fileInputSampulBuku"
                       class="border-2 border-gray-400 md:py-[1px] md:px-[4px] font-roboto-medium text-gray-500 text-nowrap text-[12px] md:text-[16px] py-[4px] px-2 bg-gray-300">Browse
                       Files</label>
-                    <input type="file" id="fileInputSampulBuku" accept="image/*" class="invisible">
+                    <input name="fileInputSampulBuku" type="file" id="fileInputSampulBuku" accept="image/*" class="invisible">
                   </div>
                   <div id="dropArea"
                     class="drop-area bg-gray-100 w-[280px] h-[280px] mx-2 md:mx-0 flex flex-col items-center justify-center">
@@ -293,7 +294,7 @@
                     <label for="fileInputJurnalBuku"
                       class="border-2 border-gray-400 md:py-[1px] md:px-[4px] font-roboto-medium text-gray-500 text-nowrap text-[12px] md:text-[16px] py-[4px] px-2 bg-gray-300">Browse
                       Files</label>
-                    <input type="file" id="fileInputJurnalBuku" accept="image/*" class="invisible">
+                    <input name="fileInputJurnalBuku" type="file" id="fileInputJurnalBuku" accept="image/*" class="invisible">
                   </div>
                   <div id="dropArea2"
                     class="drop-area bg-gray-100 w-[280px] h-[280px] mx-2 md:mx-0 flex flex-col items-center justify-center">
@@ -323,7 +324,7 @@
                     <label for="fileInputTanggapanBuku"
                       class="border-2 border-gray-400 md:py-[1px] md:px-[4px] font-roboto-medium text-gray-500 text-nowrap text-[12px] md:text-[16px] py-[4px] px-2 bg-gray-300">Browse
                       Files</label>
-                    <input type="file" id="fileInputTanggapanBuku" accept="image/*" class="invisible">
+                    <input name="fileInputTanggapanBuku" type="file" id="fileInputTanggapanBuku" accept="image/*" class="invisible">
                   </div>
                   <div id="dropArea3"
                     class="drop-area bg-gray-100 w-[280px] h-[280px] mx-2 md:mx-0 flex flex-col items-center justify-center">
@@ -348,12 +349,12 @@
                     kesuluruhan isi dari resensi yang saya muat.
                   </p>
                 </div>
-                <input type="submit"
+                <input type="submit" id="submit"
                   class="bg-green-600 flex flex-col items-center justify-center font-roboto-black border-2 border-gray-400 outline-none py-2 px-5 w-60 submit">
+              </div>
               </div>
             </div>
           </form>
-        </div>
       </div>
     </div>
   </main>
