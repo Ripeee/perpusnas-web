@@ -375,7 +375,7 @@ function updatePreview(
 	if (file) {
 		reader.readAsDataURL(file);
 	} else {
-		textPreviewElement.classList.add("hidden");
+		textPreviewElement.classList.remove("hidden");
 		previewElement.src = "";
 		previewElement.classList.add("hidden");
 		fileNamePreview.textContent = "";
@@ -402,6 +402,11 @@ function InformasiDropdown() {
 	document.querySelector(".dropdown-icon2").classList.toggle("rotate-180");
 	document.querySelector(".list-dropdown2").classList.toggle("hidden");
 }
+
+document.getElementById('checkboxText').addEventListener('click', () => {
+		var checkbox = document.getElementById("checkbox");
+		checkbox.checked = !checkbox.checked;
+})
 
 document.querySelector(".beranda").addEventListener("click", () => {
 	document.querySelector(".beranda").classList.add("bg-green-600");

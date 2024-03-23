@@ -147,8 +147,14 @@ input[type="submit"] {
 }
 
 .ck.ck-sticky-panel .ck-sticky-panel__content_sticky {
-  position: static !important;
+	position: static !important;
 }
+
+/* input[type="checkbox"]:enabled:checked {
+	accent-color: rgb(167, 167, 167) !important;
+	background-color: white !important;
+} */
+
 
 @media only screen and (min-width: 640px) {
 	.ck-restricted-editing_mode_standard > p {
