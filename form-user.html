@@ -198,22 +198,25 @@
     <button onclick="CloseSearch()" class="font-roboto-black text-[30px]">X</button>
   </div>
 
-  <nav
-    class="z-50 fixed w-full bg-white bottom-0 flex flex-col items-center justify-center shadow-xl xl:hidden">
+  <nav class="z-50 fixed w-full bg-white bottom-0 flex flex-col items-center justify-center shadow-xl xl:hidden">
     <ul class="flex flex-row justify-between items-center m-0 p-0">
-      <li class="bg-green-600 h-full animate duration-300 text-white m-0 p-0"><a href="" class="flex flex-col items-center text-center justify-center gap-0 my-2 my-2 px-[25px] min-[360px]:px-[28px] animate duration-300 min-[460px]:px-11 sm:px-[60px] md:px-[75px] lg:px-[115px]">
+      <li class="bg-green-600 h-full animate duration-300 text-white m-0 p-0"><a href=""
+          class="flex flex-col items-center text-center justify-center gap-0 my-2 my-2 px-[25px] min-[360px]:px-[28px] animate duration-300 min-[460px]:px-11 sm:px-[60px] md:px-[75px] lg:px-[115px]">
           <i class="fa-solid fa-house text-xl sm:text-2xl"></i>
           <span class="text-[12px] min-[360px]:text-[14px] sm:text-[16px]">Home</span>
         </a></li>
-      <li class="hover:bg-green-600 h-full animate duration-300 hover:text-white m-0 p-0"><a href="" class="flex flex-col items-center text-center justify-center gap-0 my-2 my-2 px-[25px] min-[360px]:px-[28px] animate duration-300 min-[460px]:px-11 sm:px-[60px] md:px-[75px] lg:px-[115px]">
+      <li class="hover:bg-green-600 h-full animate duration-300 hover:text-white m-0 p-0"><a href=""
+          class="flex flex-col items-center text-center justify-center gap-0 my-2 my-2 px-[25px] min-[360px]:px-[28px] animate duration-300 min-[460px]:px-11 sm:px-[60px] md:px-[75px] lg:px-[115px]">
           <i class="fa-solid fa-house text-xl sm:text-2xl"></i>
           <span class="text-[12px] min-[360px]:text-[14px] sm:text-[16px]">Home</span>
         </a></li>
-      <li class="hover:bg-green-600 h-full animate duration-300 hover:text-white m-0 p-0"><a href="" class="flex flex-col items-center text-center justify-center gap-0 my-2 my-2 px-[25px] min-[360px]:px-[28px] animate duration-300 min-[460px]:px-11 sm:px-[60px] md:px-[75px] lg:px-[115px]">
+      <li class="hover:bg-green-600 h-full animate duration-300 hover:text-white m-0 p-0"><a href=""
+          class="flex flex-col items-center text-center justify-center gap-0 my-2 my-2 px-[25px] min-[360px]:px-[28px] animate duration-300 min-[460px]:px-11 sm:px-[60px] md:px-[75px] lg:px-[115px]">
           <i class="fa-solid fa-house text-xl sm:text-2xl"></i>
           <span class="text-[12px] min-[360px]:text-[14px] sm:text-[16px]">Home</span>
         </a></li>
-      <li class="hover:bg-green-600 h-full animate duration-300 hover:text-white m-0 p-0"><a href="" class="flex flex-col items-center text-center justify-center gap-0 my-2 my-2 px-[25px] min-[360px]:px-[28px] animate duration-300 min-[460px]:px-11 sm:px-[60px] md:px-[75px] lg:px-[115px]">
+      <li class="hover:bg-green-600 h-full animate duration-300 hover:text-white m-0 p-0"><a href=""
+          class="flex flex-col items-center text-center justify-center gap-0 my-2 my-2 px-[25px] min-[360px]:px-[28px] animate duration-300 min-[460px]:px-11 sm:px-[60px] md:px-[75px] lg:px-[115px]">
           <i class="fa-solid fa-house text-xl sm:text-2xl"></i>
           <span class="text-[12px] min-[360px]:text-[14px] sm:text-[16px]">Home</span>
         </a></li>
@@ -230,8 +233,7 @@
             <div class="flex flex-col items-center gap-5">
               <input type="text" placeholder="Judul Resensi"
                 class="border-2 border-gray-600 py-2 px-5 rounded-xl w-full">
-              <textarea name="isiBuku" id="isiBuku" class="" placeholder="Typing is here..">
-              </textarea>
+              <textarea name="contentBuku" id="isiBuku"></textarea>
               <div class="flex justify-center xl:justify-start w-full">
                 <h1 class="font-roboto-black text-center xl:text-start md:text-[20px]">Identitas Buku</h1>
               </div>
@@ -338,7 +340,9 @@
               <div class="flex flex-col md:flex-row items-center gap-5 md:gap-2">
                 <div class="flex flex-row gap-2 items-start justify-start">
                   <input type="checkbox" name="checkbox" id="checkbox" class="mt-2 accent-gray-500">
-                  <p id="checkboxText" class="text-[10px] sm:text-[12px] md:text-[16px] w-[280px] lg:w-[400px] cursor-pointer">Saya menjamin
+                  <p id="checkboxText"
+                    class="text-[10px] sm:text-[12px] md:text-[16px] w-[280px] lg:w-[400px] cursor-pointer">Saya
+                    menjamin
                     originalitas isi resensi, dan
                     bertanggung jawab penuh terhadap
                     kesuluruhan isi dari resensi yang saya muat.
